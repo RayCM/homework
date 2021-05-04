@@ -1,5 +1,6 @@
 **Search stations**
 ----
+
   搜尋場站資訊
   -依搜尋內容對中文場站名稱、中文場站區域、中文地址三個欄位進行模糊搜尋比對。
 
@@ -11,15 +12,15 @@
 
   `GET`
 
-*  **Headers**
+* **Headers**
 
    **Required:**
 
    `Authorization: Bearer <token>`
   
-*  **URL Params**
+* **URL Params**
   **Required:**
- 
+
    `<search> string, 搜尋內容, ex: 中研公園`
 
 * **Data Params**
@@ -29,8 +30,8 @@
 * **Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:** <br />
+
         {
             "success": true,
             "data": [
@@ -56,11 +57,11 @@
             ],
             "message": "Stations retrieved successfully."
         }
-        ```
-
+        
 
 **All stations**
 ----
+
   全部場站資訊
 
 * **URL**
@@ -71,13 +72,13 @@
 
   `GET`
 
-*  **Headers**
+* **Headers**
 
    **Required:**
 
    `Authorization: Bearer <token>`
   
-*  **URL Params**
+* **URL Params**
 
   None
 
@@ -88,8 +89,8 @@
 * **Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:** <br />
+        
         {
             "success": true,
             "data": [
@@ -135,4 +136,3 @@
             ],
             "message": "Stations retrieved successfully."
         }
-        ```

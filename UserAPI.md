@@ -11,15 +11,17 @@
   `POST`
   
 *  **URL Params**
-  None
+
+
+    None
 
 * **Data Params**
 
   **Required:**
 
-  `<account> string, 帳號, ex: ray`
-  `<password> string, 密碼, 長度6-12位數 ex: a123456`
-  `<email> string, 信箱 ex: ray@abc.com`
+  `<account> string, 帳號, ex: ray` <br />
+  `<password> string, 密碼, 長度6-12位數 ex: a123456` <br />
+  `<email> string, 信箱 ex: ray@abc.com` <br />
 
   **Optional:**
 
@@ -28,8 +30,8 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:**  <br />
+        
         {
             "success": true,
             "data": {
@@ -37,14 +39,14 @@
             },
             "message": "Regist successfully."
         }
-        ```
+
 
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Description:** 參數驗證錯誤 <br />
-    **Content:**
-        ```json
+  * **Description:** 參數驗證錯誤 <br />
+  * **Content:** <br />
+        
         {
             "success": false,
             "message": "Validation Error.",
@@ -60,20 +62,18 @@
                 ]
             }
         }
-        ```
         
   OR
 
   * **Code:** 500  <br />
-    **Description:** 寫入DB失敗 <br />
-    **Content:** 
-        ```json
+  * **Description:** 寫入DB失敗 <br />
+  * **Content:** <br />
+        
         {
             "success": false,
             "message": "Regist fail.",
             "data": {}
         }
-        ```
 
 
 **Login**
@@ -89,20 +89,22 @@
   `POST`
   
 *  **URL Params**
-  None
+
+
+    None
 
 * **Data Params**
 
   **Required:**
 
-  `<account> string, 帳號, ex: ray`
-  `<password> string, 密碼, 長度6-12位數 ex: a123456`
+  `<account> string, 帳號, ex: ray` <br />
+  `<password> string, 密碼, 長度6-12位數 ex: a123456` <br />
 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:** <br />
+        
         {
             "success": true,
             "data": {
@@ -110,19 +112,19 @@
             },
             "message": "Login as admin."
         }
-        ```
+
 
 * **Error Response:**
 
   * **Code:** 500 <br />
-    **Description:** 帳號或密碼錯誤 <br />
-    **Content:**
-        ```json
+  * **Description:** 帳號或密碼錯誤 <br />
+  * **Content:** <br />
+       
         {
             "success": false,
             "message": "Wrong account or password！"
         }
-        ```
+       
 
 
 **Logout**
@@ -144,23 +146,25 @@
    `Authorization: Bearer <token>`
   
 *  **URL Params**
-  None
+
+
+    None
 
 * **Data Params**
 
-  None
+    None
 
 * **Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:** <br />
+        
         {
             "success": true,
             "data": [],
             "message": "Logged out successfully."
         }
-        ```
+        
 
 
 **Userinfo**
@@ -182,17 +186,19 @@
    `Authorization: Bearer <token>`
   
 *  **URL Params**
-  None
 
-* **Data Params**
 
-  None
+    None
+
+*  **Data Params**
+
+    None
 
 * **Response:**
 
   * **Code:** 200 <br />
-    **Content:** 
-        ```json
+  * **Content:** <br />
+        
         {
             "success": true,
             "data": {
@@ -202,4 +208,4 @@
             },
             "message": "Users retrieved successfully."
         }
-        ```
+        
